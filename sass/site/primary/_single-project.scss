@@ -1,0 +1,172 @@
+// Single project page
+
+.kgw-projects-template-default.single.single-kgw-projects {
+	background-image: url('images/single-bg-1.png'), url('images/single-bg-2.png');
+	background-position: left top, 5% 80%;
+	background-repeat: no-repeat, no-repeat;
+	overflow-x: hidden;
+	-webkit-animation: backgroundScroll4 3s linear 1;
+    -webkit-animation-fill-mode: forwards;
+    animation: backgroundScroll4 3s ease 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes backgroundScroll4 {
+    from {background-position: -100px -100px, left bottom;}
+	to {background-position: left top, 5% 80%;}
+}
+
+.site-main-single-project {
+	margin: 0 auto;
+	max-width: 600px;
+	width: 80%;
+	margin-top: -40px;
+
+	h1.entry-title {
+		margin-bottom: 5px;
+	}
+
+	ol {
+		margin-left: 0;
+		padding-left: 15px;
+	}
+}
+
+.project-title {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.tools {
+	margin-top: 0;
+}
+
+.site-main-single-project h1 {
+	font-size: 2em;
+}
+
+.site-main-single-project h2 {
+	font-size: 1.2em;
+}
+
+.proj-line-01, .proj-line-02 {
+	background-color: $text_border_grey;
+	animation-duration: 3s;
+}
+
+.proj-line-01 {
+	animation-name: projLine1;
+}
+
+@keyframes projLine1 {
+	from {bottom: 500px; opacity: 0;}
+	to {bottom: 10px; opacity: 1;}
+}
+
+.proj-line-02 {
+	animation-name: projLine2;
+}
+
+@keyframes projLine2 {
+	from {left: 500px; opacity: 0;}
+	to {left: -10px; opacity: 1;}
+}
+
+.proj-line-01 {
+	width: 3px;
+	height: 20px;
+	position: absolute;
+	bottom: 10px;
+	left: -10px;
+}
+
+.proj-line-02 {
+	width: 20px;
+	height: 3px;
+	position: absolute;
+	bottom: 0px;
+	left: -10px;
+}
+
+.site-main-single-project h2::before {
+	margin-right: 15px;
+	font-family: $icon_font;
+	color: $dark_grey;
+}
+
+h2.project-goals::before {
+	content: "\e0e9";
+}
+
+h2.research::before {
+	content: "\e116";
+}
+
+h2.development::before {
+	content: "\e030";
+}
+
+h2.takeaways::before {
+	content: "\e0d8";
+}
+
+p.last-p {
+	margin-bottom: 40px;
+}
+
+h2.takeaways {
+	margin-top: 40px;
+}
+
+.project-buttons {
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.wp-block-button.is-style-outline.dark.proj {
+	margin-right: 2px;
+	width: 100%;
+}
+
+.wp-block-button.is-style-fill a.wp-block-button__link {
+	padding: 14px 24px;
+}
+
+.wp-block-button.is-style-outline.dark.proj.demo a.wp-block-button__link, .wp-block-button.is-style-outline.dark.proj a.wp-block-button__link, .wp-block-button.is-style-fill, .wp-block-button.is-style-fill a.wp-block-button__link  {
+	width: 100%;
+}
+
+figure.wp-block-image.alignfull.size-large {
+	width: 100vw;
+	margin-left: -12.5%;
+}
+
+@media (min-width: 500px) {
+
+	.wp-block-buttons {
+		display: flex;
+	}
+
+	.wp-block-button.is-style-outline.dark.proj.demo, .wp-block-button.is-style-outline.dark.proj  {
+		width: 48.5%;
+	}
+
+	.wp-block-button.is-style-outline.dark.proj.demo  {
+		margin-right: 5px;
+	}
+
+	.wp-block-button.is-style-outline.dark.proj.portfolio {
+		width: 100%;
+		max-width: 592px;
+	}
+}
+
+@media (min-width: 750px) {
+
+	figure.wp-block-image.alignfull.size-large {
+		width: 100%;
+		margin-left: 0%;
+	}
+
+}

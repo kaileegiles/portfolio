@@ -1,0 +1,218 @@
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 0;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+// All page styles
+
+.main-content-container {
+	position: relative; 
+	top: 0;
+	left: 0;
+	width: 250px;
+	margin: 0 auto;
+}
+
+a {
+	outline: none;
+	border: 0;
+}
+
+.text-container {
+	width: 80%;
+	background-color: $dark_grey;
+	color: $text_border_grey;
+	padding: 30px 40px 50px 40px;
+	margin: 0 auto;
+	width: 250px;
+	box-shadow: 10px 10px $text_border_grey;
+	border-radius: 3px;
+}
+
+.line-01, .line-02, .line-01-alt, .line-02-alt {
+	background-color: $text_border_grey;
+	border-radius: 3px;
+	animation-duration: 3s;
+}
+
+.line-01 {
+	animation-name: lines;
+}
+
+@keyframes lines {
+    from {top: 800px; opacity: 0;}
+	to {top: 0px; opacity: 1;}
+}
+
+.line-02 {
+	animation-name: lines2;
+}
+
+@keyframes lines2 {
+    from {left: 800px; opacity: 0;}
+	to {left: -8px; opacity: 1;}
+}
+
+.line-01-alt {
+	animation-name: lines3;
+}
+
+@keyframes lines3 {
+	from {bottom: 800px; opacity: 0;}
+	to {bottom: -8px; opacity: 1;}
+}
+
+.line-02-alt {
+	animation-name: lines4;
+}
+
+@keyframes lines4 {
+	from {right: 800px; opacity: 0;}
+	to {right: -18px; opacity: 1;}
+}
+
+.line-01, .line-01-alt {
+	width: 3px;
+	height: 60px;
+	position: absolute;
+}
+
+.line-02, .line-02-alt {
+	width: 60px;
+	height: 3px;
+	position: absolute;
+}
+
+.line-01 {
+	top: 0px;
+	left: -9px;
+}
+
+.line-02 {
+	top: -8px;
+	left: -8px;
+}
+
+.line-01-alt {
+	bottom: -9px;
+	right: -20px;
+}
+
+.line-02-alt {
+	bottom: -20px;
+	right: -18px;
+}
+
+.wp-block-button.is-style-outline {
+	color: $text_border_grey;
+}
+
+.wp-block-button__link {
+	border-radius: 3px;
+	font-family: 'LemonMilk-R';
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+.wp-block-button.is-style-outline:hover {
+	color: $dark_grey;
+}
+
+.is-style-outline:hover {
+	color: $dark_grey;
+}
+
+.wp-block-button.is-style-outline a.wp-block-button__link:hover {
+	background-color: $text_border_grey;
+	transform: scale(0.99);
+	transition: .5s ease-in-out; 
+}
+
+.wp-block-button.is-style-outline.dark {
+	color: $dark_grey;
+}
+
+.wp-block-button.is-style-outline.dark a.wp-block-button__link:hover {
+	background-color: $dark_grey;
+	transform: scale(0.99);
+	transition: .5s ease-in-out; 
+}
+
+.wp-block-button.is-style-outline.dark:hover {
+	color: $text_border_grey;
+}
+
+.entry-content {
+	margin-top: 0;
+}
+
+@media (min-width: 350px) {
+	.main-content-container {
+		width: 300px;
+	}
+	
+	.text-container {
+		width: 300px;
+	}
+}
+
+@media (min-width: 410px) {
+	.main-content-container {
+		width: 360px;
+	}
+	
+	.text-container {
+		width: 360px;
+	}
+}
+
+@media (min-width: 550px) {
+	.main-content-container {
+		width: 500px;
+	}
+	
+	.text-container {
+		padding: 30px 75px 50px 75px;
+		width: 500px;
+	}
+}
+
+@media (min-width: 700px) {
+	.main-content-container {
+		width: 600px;
+	}
+	
+	.text-container {
+		padding: 50px 75px 70px 75px;
+		width: 600px;
+	}
+}
+
+@media (min-width: 800px) {
+	.main-content-container {
+		width: 700px;
+	}
+	
+	.text-container {
+		width: 700px;
+	}
+}

@@ -1,0 +1,66 @@
+// Contact page styles
+
+.site-main-contact {
+	height: 100vh;
+}
+
+.page-template-default.page.page-id-10 {
+	background-image: url('images/contact-bg-1.png'), url('images/contact-bg-2.png');
+	background-position: left top, 80% 95%;
+	background-repeat: no-repeat, no-repeat;
+	-webkit-animation: backgroundScroll5 3s linear 1;
+    -webkit-animation-fill-mode: forwards;
+    animation: backgroundScroll5 3s ease 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes backgroundScroll5 {
+    from {background-position: -100px -100px, center -200px;}
+	to {background-position: left top, 80% 95%;}
+}
+
+.text-container p a {
+	color: $text_border_grey;
+	text-decoration: none;
+	font-weight: 700;
+
+	&:hover, &:focus {
+		color: white;
+	}
+}
+
+.text-container.contact {
+	animation-name: color4;
+	animation-duration: 3s;
+	animation-delay: 0.5s;
+	animation-timing-function: ease-in;
+}
+
+@keyframes color4 {
+	0%{background-color: #9C5A08;}
+	100%{background-color: $dark_grey;}
+}
+
+.text-container.contact p {
+	margin-bottom: 10px;
+}
+
+.logos {
+	display: flex;
+}
+
+.logos figure {
+	max-width: 30px;
+	margin-right: 20px;
+}
+
+.logos figure a:focus {
+	outline-color: $text_border_grey;
+}
+
+@media (min-width: 800px){
+	.text-container.contact {
+		padding-top: 80px;
+		padding-bottom: 100px;
+	}
+}

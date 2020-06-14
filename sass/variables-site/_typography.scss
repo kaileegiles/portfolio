@@ -1,0 +1,66 @@
+// stylelint-disable value-keyword-case
+$font__main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+// stylelint-enable value-keyword-case
+$font__code: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+$font__pre: "Courier 10 Pitch", courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-pre: 1.6;
+
+// Heading Font
+
+@font-face {
+    font-family: 'LemonMilk-M';
+    src: url('fonts/lemon_milk/LEMONMILK-Medium.otf');
+}
+
+$heading_font: 'LemonMilk-M';
+
+h1, h2, h3 {
+    font-family: $heading_font;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2em;
+    padding-right: 10px;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+
+
+// Body Font
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+$body_font: 'PTSans';
+
+p, li {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+// Button font 
+
+@font-face {
+    font-family: 'LemonMilk-R';
+    src: url('fonts/lemon_milk/LEMONMILK-Regular.otf');
+}
+
+$button_font: 'LemonMilk-R';
+
+// Icon font
+
+@font-face {
+    font-family: 'icons';
+    src: url('fonts/iconmonstr/fonts/iconmonstr-iconic-font.woff2');
+}
+
+$icon_font: 'icons';
+

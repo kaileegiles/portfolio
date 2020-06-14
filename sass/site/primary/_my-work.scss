@@ -1,0 +1,107 @@
+// My Projects page
+
+.archive.post-type-archive.post-type-archive-kgw-projects.hfeed {
+	background-image: url('images/work-bg-1.png'), url('images/work-bg-2.png');
+	background-position: 0 7%, right bottom;
+	background-repeat: no-repeat, no-repeat;
+	-webkit-animation: backgroundScroll3 3s linear 1;
+    -webkit-animation-fill-mode: forwards;
+    animation: backgroundScroll3 3s ease 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes backgroundScroll3 {
+    from {background-position: 0 -50px, top center;}
+	to {background-position: 0 7%, right bottom;}
+}
+
+h2.entry-title {
+	margin-bottom: 0;
+}
+
+h2.entry-title a {
+	text-decoration: none;
+	color: $dark_grey;
+}
+
+.project-content {
+	margin: 0 auto;
+}
+
+.project-tile {
+	border: 1.5px solid $dark_grey;
+	border-radius: 3px;
+	padding: 30px;
+	width: 250px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	box-shadow: 1px 1px 10px $text_border_grey;
+	animation-name: fadein;
+	animation-timing-function: ease;
+	-webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
+	animation: fadein 7s;
+}
+
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.project-content {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.project-tile p {
+	margin-top: 10px;
+}
+
+.text-container.projects {
+	animation-name: color3;
+	animation-duration: 3s;
+	animation-delay: 0.5s;
+	animation-timing-function: ease-in;
+}
+
+.current-project-title {
+	margin-bottom: 0;
+}
+
+.current-project {
+	margin-top: 0;
+}
+
+@keyframes color3 {
+	0%{background-color: #308583;}
+	100%{background-color: $dark_grey;}
+}
+
+@media (min-width: 350px) {
+	.project-tile {
+		width: 300px;
+	}
+}
+
+@media (min-width: 410px) {
+	.project-tile {
+		width: 360px;
+	}
+}
+
+@media (min-width: 550px) {
+	.project-tile {
+		width: 500px;
+	}
+}
+
+@media (min-width: 700px) {
+	.project-tile {
+		width: 600px;
+	}
+}
+
+@media (min-width: 800px) {
+	.project-tile {
+		width: 700px;
+	}
+}

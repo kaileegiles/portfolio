@@ -1,0 +1,118 @@
+// About page styles
+
+.page-template-default.page.page-id-8 {
+	background-image: url('images/about-bg-1.png'), url('images/about-bg-2.png');
+	background-position: left top, right 70%;
+	background-repeat: no-repeat, no-repeat;
+	-webkit-animation: backgroundScroll2 3s linear 1;
+    -webkit-animation-fill-mode: forwards;
+    animation: backgroundScroll2 3s ease 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes backgroundScroll2 {
+    from {background-position: left -300px, right bottom;}
+	to {background-position: left top, right 70%;}
+}
+
+.text-container.about {
+	animation-name: color2;
+	animation-duration: 3s;
+	animation-delay: 0.5s;
+	animation-timing-function: ease-in;
+}
+
+@keyframes color2 {
+	0%{background-color: #853D74;}
+	100%{background-color: $dark_grey;}
+}
+
+.about-content {
+	max-width: 700px;
+	margin: 0 auto;
+	width: 80%;
+	animation-name: fadein;
+	animation-timing-function: ease;
+	-webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 7s; /* Firefox < 16 */
+	-ms-animation: fadein 7s; /* Internet Explorer */
+	-o-animation: fadein 7s; /* Opera < 12.1 */
+	animation: fadein 7s;
+}
+
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+.about-content p {
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+.about-content p.bold {
+	font-weight: 700;
+}
+
+.background-content {
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.about-content {
+	margin-bottom: 30px;
+}
+
+.job-title {
+	font-style: italic;
+}
+
+p.job-content {
+	margin-bottom: 40px;
+}
+
+.design-stack .wp-block-column, .tech-stack .wp-block-column {
+	max-width: 50%;
+}
+
+.design-stack .wp-block-columns, .tech-stack .wp-block-columns {
+	display: flex;
+}
+
+@media (min-width: 350px) {
+	
+	.about-content {
+		width: 300px;
+	}
+}
+
+@media (min-width: 410px) {
+	
+	.about-content {
+		width: 360px;
+	}
+}
+
+@media (min-width: 550px) {
+	.about-content {
+		width: 500px;
+	}
+}
+
+@media (min-width: 600px) {
+	.design-stack, .tech-stack {
+		max-width: 500px;
+	}
+}
+
+@media (min-width: 700px) {
+	.about-content {
+		width: 600px;
+	}
+}
+
+@media (min-width: 800px) {
+	.about-content {
+		width: 700px;
+	}
+}
